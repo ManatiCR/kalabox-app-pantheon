@@ -1,11 +1,11 @@
 # Kalabox Pantheon App
-## Overview 
+## Overview
 
 By default Kalabox can pull apps from and push apps to Pantheon... but this is much more than basic push/pull integration. Kalabox will build out a local Pantheon environment for each app. This means `solr`, `redis`, `ssl` and `terminus` all work just like they do on Pantheon. You can also use `drush`, `wp-cli`, `ssl` and toggle `php` version. YAY!
 
 ## Creating and starting a Pantheon app
 
-This will spin up a Pantheon-on-Kalabox environment, set up relevant tools like `terminus`, `drush` and `wp-cli` and pull down the site and environment that you choose. 
+This will spin up a Pantheon-on-Kalabox environment, set up relevant tools like `terminus`, `drush` and `wp-cli` and pull down the site and environment that you choose.
 
 ```bash
 cd ~/dir/i/want/my/app/to/live (usually ~/Desktop/apps)
@@ -32,7 +32,7 @@ kbox
 
 Global commands that can be run from anywhere
   apps             Display list of apps.
-  create       
+  create
       pantheon     Creates a Pantheon app.
   update           Run this after you update your Kalabox code.
   version          Display the kbox version.
@@ -59,21 +59,21 @@ Commands and tools this app can use
 
 ## Pulling from Pantheon
 
-You can refresh your local code and even your database and files by running `kbox pull` from inside of your Pantheon app. 
+You can refresh your local code and even your database and files by running `kbox pull` from inside of your Pantheon app.
 
 ```
 kbox pull -- -h
 Options:
-  -h, --help     Display help message.                                 
-  -v, --verbose  Use verbose output.                                
+  -h, --help     Display help message.
+  -v, --verbose  Use verbose output.
   --database     Pull DB from an env. Options are dev, test, live and none
   --files        Pull files from an env. Options are dev, test, live and none
-  --newbackup    True to generate a new DB backup                      
+  --newbackup    True to generate a new DB backup
 ```
 
 ## Pushing to Pantheon
 
-You can easily push up code and even your database and files by running `kbox push`. 
+You can easily push up code and even your database and files by running `kbox push`.
 
 ```bash
 Options:
